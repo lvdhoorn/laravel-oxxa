@@ -84,4 +84,19 @@ class Domains extends AbstractApi
     {
         return $this->request(array_merge(['command' => 'domain_upd'], $params));
     }
+    
+    public function dnssec_add($params)
+    {
+        return $this->request(array_merge(['command' => 'dnssec_add'], $params));
+    }
+
+    public function dnssec_del($params)
+    {
+        return $this->request(array_merge(['command' => 'dnssec_del'], $params));
+    }
+
+    public function dnssec_info($params)
+    {
+        return $this->request(array_merge(['command' => 'dnssec_info'], $params));
+    }
 }
